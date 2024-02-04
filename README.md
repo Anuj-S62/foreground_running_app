@@ -4,7 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-add <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" /> 
+add 
+````
+<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+````
 in Android Menifest File
 
 
