@@ -4,6 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
+add <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" /> 
+in Android Menifest File
+
+
 This project is a starting point for a Flutter
 [plug-in package](https://flutter.dev/developing-packages/),
 a specialized package that includes platform-specific implementation code for
