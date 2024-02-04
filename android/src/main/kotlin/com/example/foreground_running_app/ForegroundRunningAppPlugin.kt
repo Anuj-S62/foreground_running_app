@@ -63,7 +63,7 @@ public class ForegroundRunningAppPlugin: FlutterPlugin, MethodCallHandler,Activi
     if (runningApp != "") {
       result.success(runningApp)
     } else {
-      result.error("UNAVAILABLE", "Running app not available.", null)
+      result.error("UNAVAILABLE", "Running app not available.", "Unknown App")
     }
   }
 
