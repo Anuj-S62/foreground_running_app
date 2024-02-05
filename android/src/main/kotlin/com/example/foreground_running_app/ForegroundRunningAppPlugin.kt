@@ -82,7 +82,7 @@ public class ForegroundRunningAppPlugin: FlutterPlugin, MethodCallHandler,Activi
   public fun getCurrentRunningApp(): String {
     val usageStatsManager = context.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
     val endTime = System.currentTimeMillis()
-    val startTime = endTime - 10000  // Look back in time for the last 10 seconds
+    val startTime = endTime - 100000  // Look back in time for the last 10 seconds
     val usageEvents = usageStatsManager.queryEvents(startTime, endTime)
     Log.d(UsageEvents.Event().packageName,"usageEvents.hasNextEvent()")
     var currentApp = ""
