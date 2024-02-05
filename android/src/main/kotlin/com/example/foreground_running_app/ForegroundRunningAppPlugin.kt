@@ -84,7 +84,6 @@ public class ForegroundRunningAppPlugin: FlutterPlugin, MethodCallHandler,Activi
     val endTime = System.currentTimeMillis()
     val startTime = endTime - 100000000  // Look back in time for the last 10 seconds
     val usageEvents = usageStatsManager.queryEvents(startTime, endTime)
-    Log.d(UsageEvents.Event().packageName,"usageEvents.hasNextEvent()")
     var currentApp = ""
     var eventTime = 0L
 
