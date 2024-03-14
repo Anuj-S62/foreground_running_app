@@ -92,7 +92,8 @@ public class ForegroundRunningAppPlugin: FlutterPlugin, MethodCallHandler,Activi
       usageEvents.getNextEvent(event)
 
       if (event.eventType == UsageEvents.Event.MOVE_TO_FOREGROUND) {
-        currentApp = event.packageName
+//        get package name and app name
+        currentApp = event.packageName + " : " + event.className
         eventTime = event.timeStamp
       }
     }
